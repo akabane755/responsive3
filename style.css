@@ -92,13 +92,13 @@ main{
 .section2{
     max-width: 537px;
 }
-.section2 h{
+.section2 h1,.section3 h1{
     font-size: 2.8rem;
     font-weight: 500;
     margin-bottom:0px;
     
 }
-.section2 p{
+.section2 p,.section3 p{
    color: #727272;
    margin-top:34px;
    font-size: 1rem;
@@ -107,9 +107,62 @@ main{
     width:100%;
  
 }
+.section3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:146px;
+    margin-top: 130px;
+}
 img{
     border-radius: 8px;
 }
+.section3 h1{
+    font-weight: 700;
+}
+
+.sec21>p{
+    max-width:586px;
+    margin-bottom: 30px;
+}
+.sec22 img{
+    width:100%;
+}
+
+.section3 .card>p
+{
+    max-width:514px;
+    margin-top:10px;
+}
+.card{
+    padding:30px 33px;
+    border-radius: 8px;
+
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+background: rgb(255, 255, 255);
+margin-top:20px;
+}
+.section3 h3{
+    font-size:1.25rem;
+    font-weight:600;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.section3 button{
+    color:white;
+    border-radius: 8px;
+
+background: rgb(255, 144, 14);
+border:none;
+height: 200px;
+font-size:1.35rem;
+font-weight: 500;
+padding:46px 42px;
+margin-top:-123px;
+margin-left:-92px;
+
+}
+
 @media screen and (max-width:576px) {
     .nav-sec{
     flex-direction: column;
@@ -127,6 +180,17 @@ img{
         justify-content: center;
         text-align: center;
     }
+    .sec22 button{
+        margin:20px auto;
+        
+     }
+    .section3{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
 }
 @media screen and (min-width:576px) and (max-width:992px)
 {
@@ -140,4 +204,13 @@ img{
         justify-content: center;
         text-align: center;
     }
+    .section3{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .sec22 button{
+        margin:20px auto;
+        
+     }
 }
